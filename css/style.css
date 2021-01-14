@@ -440,7 +440,7 @@ th {
   --space-xlg: 64px;
   --screen-xs: 360px;
   --screen-sm: 768px;
-  --screen-md: 992px;
+  --screen-md: 53.81%;
   --screen-lg: 1280px;
   --screen-xlg: 1440px;
 }
@@ -840,7 +840,7 @@ nav .logo {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: flex-end;
-  background: url("../img/marcas.svg") 50% 20% / 70% auto no-repeat;
+  background: url("../img/marcas.svg") 50% 20% / 75% no-repeat;
 }
 .c-quality__title {
   color: var(--color-secondary);
@@ -1106,6 +1106,340 @@ nav .logo {
   }
   .l-gallery__img {
     width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* pg - sobre */
+.l-banner-sobre {
+  position: relative;
+  top: 5.5rem;
+  margin-bottom: 5.5rem;
+  padding: 2% 0;
+  text-align: center;
+  background: url("../img/bg-sobre.jpg") 0 center / cover no-repeat;
+}
+.l-banner-sobre__title {
+  font-size: 2em;
+  font-size: clamp(1.5em, 1em + 2vw, 2.5em);
+  font-weight: bold;
+  text-transform: uppercase;
+
+  color: var(--color-tertiary);
+}
+.l-banner-sobre__title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--color-tertiary);
+  margin: 8px auto;
+}
+.l-banner-sobre__content {
+  color: var(--color-tertiary);
+  font-style: normal;
+}
+.l-value-sobre {
+  width: var(--screen-md);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4% 0 1%;
+}
+.l-value-sobre__container {
+  max-width: 60%;
+  flex: 2;
+  margin-right: 8%;
+}
+.l-value-sobre__container2 {
+  flex: 1;
+  max-width: 40%;
+}
+.l-value-sobre__title {
+  font-size: 1.8em;
+  font-size: clamp(1.4em, 1em + 1vw, 1.8em);
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+}
+.l-value-sobre__title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--color-secondary);
+  margin: 8px 0;
+}
+.l-value-sobre__content {
+  font-style: normal;
+  font-size: clamp(0.5em, 1em + 1vw, 1.3em);
+  line-height: 1.5em;
+  margin-bottom: 5%;
+}
+.l-value-sobre__list {
+  list-style: none;
+  font-style: normal;
+  font-size: clamp(1em, 1em + 1vw, 1.3em);
+  line-height: 1.5em;
+  margin-bottom: 5%;
+}
+.l-value-sobre__equipe {
+  background: url("../img/equipe-bikcraft.jpg") center/ cover no-repeat;
+  width: var(--screen-md);
+  height: 20rem;
+  margin: 0 auto;
+}
+@media (max-width: 1533px) {
+  .l-value-sobre__container {
+    max-width: 55%;
+  }
+  .l-value-sobre__container2 {
+    max-width: 45%;
+  }
+}
+@media (max-width: 1476px) {
+  .l-value-sobre {
+    width: 70%;
+  }
+  .l-value-sobre__container {
+    max-width: 60%;
+  }
+  .l-value-sobre__container2 {
+    max-width: 40%;
+  }
+  .l-value-sobre__equipe {
+    width: 70%;
+    height: 15rem;
+  }
+}
+@media (max-width: 1182px) {
+  .l-value-sobre {
+    width: 70%;
+  }
+  .l-value-sobre__container {
+    max-width: 52%;
+  }
+  .l-value-sobre__container2 {
+    max-width: 49%;
+  }
+}
+@media (max-width: 960px) {
+  .l-value-sobre {
+    width: 90%;
+  }
+  .l-value-sobre__container {
+    max-width: 53%;
+  }
+  .l-value-sobre__container2 {
+    max-width: 48%;
+  }
+  .l-value-sobre__equipe {
+    width: 90%;
+  }
+}
+@media (max-width: 760px) {
+  .l-value-sobre {
+    width: 60%;
+    flex-direction: column;
+
+    text-align: left;
+  }
+  .l-value-sobre__container {
+    max-width: 100%;
+  }
+  .l-value-sobre__container2 {
+    max-width: 100%;
+  }
+  .l-value-sobre__equipe {
+    width: 60%;
+    height: 10rem;
+  }
+}
+/* Pg - portifolio */
+.l-quote {
+  width: var(--screen-md);
+  margin: 0 auto;
+  text-align: right;
+  display: flex;
+  justify-content: center;
+  padding: 4% 0;
+}
+.l-quote__client {
+  width: 50%;
+  font-size: clamp(1.2em, 1em + 1vw, 1.3em);
+  line-height: 1.3em;
+}
+.l-quote__content {
+  margin-bottom: 3%;
+  text-align: center;
+}
+.l-quote__cite {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1em;
+}
+.l-gallery-port {
+  padding: 2% 0;
+}
+/* Pg - produto */
+.l-banner-produto {
+  background: url("../img/bg-produtos.jpg") 0 center / cover no-repeat;
+  margin-bottom: 150px;
+}
+.l-introduction {
+  width: var(--screen-md);
+  margin: 0 auto;
+  display: grid;
+  padding: 2.5% 0;
+  grid-template-columns: repeat(16, minmax(20px, 1fr));
+  grid-template-rows: repeat(2, minmax(50%, 250px));
+  grid-gap: 20px;
+}
+.l-introduction:nth-last-of-type(2) {
+  margin-bottom: 60px;
+}
+
+.l-intro {
+  grid-column: 1/12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/bikcraft-passeio.jpg") 50% 0 / cover no-repeat;
+}
+.l-intro-e {
+  background: url("../img/produtoEsporte.jpg") 50% 0 / cover no-repeat;
+}
+.l-intro-r {
+  background: url("../img/bikcraft-retro-1.jpg") 50% 0 / cover no-repeat;
+}
+.l-intro__title {
+  font-size: clamp(1.2em, 1em + 1vw, 2.2em);
+  text-transform: uppercase;
+  color: var(--color-tertiary);
+}
+.l-intro__title::before,
+.l-intro__title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 10px auto;
+  background-color: var(--color-tertiary);
+}
+.l-logo {
+  grid-column: 12/-1;
+  background-color: var(--color-secondary);
+  padding: 20% 10%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.l-model {
+  grid-column: 1/9;
+  background-color: blue;
+}
+.l-model__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.l-painel {
+  grid-column: 9/-1;
+  background-color: var(--color-primay);
+}
+.l-painel__content {
+  background-color: var(--color-secondary);
+  padding: 8%;
+  height: 67%;
+  color: var(--color-tertiary);
+  font-size: clamp(0.9em, 1em + 1vw, 1.3em);
+  font-style: normal;
+}
+.c-value {
+  background-color: var(--color-primay);
+  padding: 0;
+  height: 33%;
+  list-style: none;
+  color: var(--color-secondary);
+  font-size: clamp(1em, 1em + 1vw, 1.3em);
+  font-style: normal;
+  font-weight: bold;
+  display: flex;
+  flex-flow: row wrap;
+}
+.c-value__item {
+  width: 50%;
+  padding: 2.1%;
+  text-align: center;
+}
+.c-value li:nth-child(odd) {
+  border-right: 2px solid var(--color-secondary);
+}
+.c-value li:nth-child(-n + 2) {
+  border-bottom: 2px solid var(--color-secondary);
+}
+@media (max-width: 1476px) {
+  .l-introduction {
+    width: 70%;
+  }
+  .l-logo {
+    padding: 15% 5%;
+  }
+  .c-value__item {
+    padding: 2.2%;
+  }
+}
+@media (max-width: 1187px) {
+  .l-introduction {
+    width: 70%;
+
+    grid-template-columns: repeat(16, minmax(20px, 1fr));
+  }
+  .l-intro {
+    grid-column: 1/11;
+  }
+  .l-logo {
+    grid-column: 11/-1;
+  }
+}
+@media (max-width: 960px) {
+  .l-introduction {
+    width: 90%;
+
+    grid-template-columns: repeat(16, minmax(20px, 1fr));
+    grid-template-rows: repeat(2, minmax(30%, 200px));
+    grid-gap: 10px;
+  }
+  .l-intro {
+    grid-column: 1/11;
+  }
+  .l-logo {
+    grid-column: 11/-1;
+  }
+  .l-painel__content {
+    padding: 7%;
+    height: 60%;
+    font-size: 1.1em;
+  }
+  .c-value {
+    height: 40%;
+  }
+}
+@media (max-width: 760px) {
+  .l-banner-produto {
+    margin-bottom: 120px;
+  }
+  .l-introduction {
+    width: 65%;
+    padding: 4% 0;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px;
+    justify-content: center;
+    grid-row-gap: 10px;
+    grid-column-gap: 0;
     margin: 0 auto;
   }
 }
