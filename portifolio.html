@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
   <title>Bikcraft-Bicicletas Personalizadas</title>
 </head>
 
@@ -34,21 +35,50 @@
     </div>
   </header>
   <section class="l-banner-sobre l-banner-port">
-    <h2 class="l-banner-sobre__title">PORTFÓLIO</h2>
-    <p class="l-banner-sobre__content">conheça os projetos que amamos mostrar</p>
+    <h2 class="l-banner-sobre__title fadeInDown" data-anime="400">PORTFÓLIO</h2>
+    <p class="l-banner-sobre__content fadeInDown" data-anime="800">conheça os projetos que amamos mostrar</p>
   </section>
-  <section class="l-quote">
+  <section class="l-quote fadeInDown" data-slide="principal" data-anime="1200">
     <blockquote class="l-quote__client">
       <p class="l-quote__content">“Nada melhor do que dar um rolê com a minha Bikcraft na orla. Essa é a minha companheira mais fiel, nunca me traiu e está sempre a minha disposição.”</p>
       <cite class="l-quote__cite">Jhony Rato</cite>
     </blockquote>
+    <blockquote class="l-quote__client">
+      <p class="l-quote__content">“Rolê com a minha Bikcraft na orla. Essa é a minha companheira mais fiel, nunca me traiu e está sempre a minha disposição.”
+
+        Jhony Rato
+        “Aqueles que ainda não possuem uma Bikcraft, não sabem o que estão perdendo. A precisão é absurda e a velocidade transcendental. Nunca vida nada igual.”</p>
+      <cite class="l-quote__cite">Bernado</cite>
+    </blockquote>
+    <blockquote class="l-quote__client">
+      <p class="l-quote__content">“Pedalar sempre foi a minha paixão, o que o pessoal da Bikcraft fez foi intensificar o meu amor por esta atividade. Recomendo à todos que amo.”</p>
+      <cite class="l-quote__cite">Barbara moss</cite>
+    </blockquote>
   </section>
-  <section class="l-gallery l-gallery-port">
-    <div class="l-galley__container">
+  <section class="l-gallery l-gallery-port fadeInDown" data-anime="1600">
+    <div class="l-galley__container" data-slide="portifolio">
       <div class="c-gallery">
-        <div class="l-gallery__item1"><img src="img/produtoPasseio2.jpg" alt=" bicicletas feitas para pesseio" class="l-gallery__img"></div>
-        <div class="l-gallery__item2"><img src="img/retro.jpg" alt="bicicletas retrô  maravilhosas" class="l-gallery__img"></div>
-        <div class="l-gallery__item3"><img src="img/esport.jpg" alt=" bicicletas esporte radicais" class="l-gallery__img"></div>
+        <div class="l-gallery__item1">
+          <img src="img/produtoPasseio2.jpg" alt=" bicicletas feitas para pesseio" class="l-gallery__img">
+        </div>
+        <div class="l-gallery__item2">
+          <img src="img/retro.jpg" alt="bicicletas retrô  maravilhosas" class="l-gallery__img">
+        </div>
+        <div class="l-gallery__item3">
+          <img src="img/esport.jpg" alt=" bicicletas esporte radicais" class="l-gallery__img">
+        </div>
+      </div>
+
+      <div class="c-gallery">
+        <div class="l-gallery__item1">
+          <img src="img/retro.jpg  " alt=" bicicletas feitas para pesseio" class="l-gallery__img">
+        </div>
+        <div class="l-gallery__item2">
+          <img src="img/produtoPasseio2.jpg" alt="bicicletas retrô  maravilhosas" class="l-gallery__img">
+        </div>
+        <div class="l-gallery__item3">
+          <img src="img/esport.jpg" alt=" bicicletas esporte radicais" class="l-gallery__img">
+        </div>
       </div>
 
     </div>
@@ -97,6 +127,12 @@
     </div>
   </footer>
 </body>
-<script src="js/app.js"></script>
+<!-- JavaScript -->
+<script src="./js/app.js"></script>
+<script src="./js/simple-anime.js"></script>
+<script src="./js/simple-slide.js"></script>
+<script src="./js/script.js"></script>
+
+<!-- JavaScript -->
 
 </html>
