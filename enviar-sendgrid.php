@@ -2,11 +2,11 @@
 
 require("./sendgrid-php/sendgrid-php.php");
 
-$email_site = "kleberpapait@outlook.com";
+$email_site = "papait@kleberpapait.com.br";
 $nome_site = "Bikcraft";
 
-$email_user = $_POST["kleberpapait@outlook.com"];
-$nome_user = $_POST[""];
+$email_user = $_POST["email"];
+$nome_user = $_POST["nome"];
 
 $body_content = "";
 foreach( $_POST as $field => $value) {
@@ -25,7 +25,7 @@ $email->setReplyTo($email_user, $nome_user);
 $email->setSubject("Formulário Bikcraft");
 $email->addContent("text/plain", $body_content);
 
-$sendgrid = new \SendGrid("COLOQUE A API AQUI");
+$sendgrid = new \SendGrid('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');
 try {
     $response = $sendgrid->send($email);
     print $response->statusCode() . "\n";

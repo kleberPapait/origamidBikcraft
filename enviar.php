@@ -8,13 +8,13 @@ require "./PHPMailer/src/PHPMailer.php";
 require "./PHPMailer/src/SMTP.php";
   
 // Mudar Aqui o e-mail
-$email_envio = "kleberpapait@outlook.com"; // E-mail do site (ex: contato@seusite.com)
-$email_pass = "Papaitecma"; // Senha do e-mail
+$email_envio = "papait@kleberpapait.com.br"; // E-mail do site (ex: contato@seusite.com)
+$email_pass = "22Tensei"; // Senha do e-mail
 
 $site_name = "Bikcraft"; // Nome do Site
-$site_url = "www.bikcraft.com"; // URL do Site
+$site_url = "www.kleberpapait.com.br"; // URL do Site
 
-$host_smtp = "smtp.bikcraft.com"; // HOST SMTP Ex: smtp.domain.com.br
+$host_smtp = "smtp.hostinger.com.br"; // HOST SMTP Ex: smtp.domain.com.br
 $host_port = "587"; // Porta do Host, geralmente 465 ou 587
 
 
